@@ -43,7 +43,7 @@
     try {
       var first = !initPromise;
       await init(onStatus);
-      var n = ++runCount, dir = "/files/run" + n, file = "/str/run" + n + "/Main.java";
+      var n = ++runCount, dir = "/files/run" + n, file = "/str/Main.java"; // /str supports no subdirectories; re-adding replaces the file
       window.cheerpOSAddStringFile(file, source);
       var con = consoleEl();
       con.textContent = "";
